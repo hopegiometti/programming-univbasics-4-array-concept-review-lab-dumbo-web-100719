@@ -2,7 +2,7 @@ def find_element_index(array, value_to_find)
   array = []
   counter = 0
     while counter < array.length
-      array.index {|f| f == value_to_find}
+      array.find_index {|x| x == value_to_find}
       counter += 1
   end
 end
@@ -16,3 +16,6 @@ def find_min_value(array)
 end
 
 #myarray.index "valuetoFind"
+#def is_any_widget_profitable?
+    #@widgets.find_index { |w| w.profit > 0 }  # <== usage!
+  #end
